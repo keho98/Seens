@@ -21,8 +21,15 @@ class GameViewController: UIViewController {
         let boxGeometry = SCNBox(width: 4.0, height: 4.0, length: 4.0, chamferRadius: 1.0)
         boxGeometry.firstMaterial!.diffuse.contents = UIColor(red: 0.1, green: 0.2, blue: 0.7, alpha: 0.9)
         let boxNode = SCNNode(geometry: boxGeometry)
-        boxNode.position =  SCNVector3(x: 2, y: 5, z: 0)
+        boxNode.position =  SCNVector3(x: 2, y: 5, z: 2)
         scene.rootNode.addChildNode(boxNode)
+        
+        let planeGeometry = SCNPlane(width: 40.0, height: 40.0)
+        planeGeometry.firstMaterial!.diffuse.contents = UIColor.greenColor()
+        let planeNode = SCNNode(geometry: planeGeometry)
+        planeNode.transform = SCNMatrix4MakeRotation(Float(M_PI_2), 0.0, 0.0, 1.0)
+        
+        scene.rootNode.addChildNode(planeNode)
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -39,6 +46,12 @@ class GameViewController: UIViewController {
         spotLightNode.light!.color = UIColor(white: 0.9, alpha: 1.0)
         spotLightNode.position = SCNVector3(x: 10, y: 10, z: 10)
         spotLightNode.castsShadow = true
+        
+        let ambientLightNode = SCNNode()
+        ambientLightNode.light = SCNLight()
+        ambientLightNode.light!.type = SCNLightTypeAmbient
+        ambientLightNode.light!.color = UIColor(white: 0.2, alpha: 1.0)
+        scene.rootNode.addChildNode(ambientLightNode)
 
         let constraint = SCNLookAtConstraint(target: boxNode)
         spotLightNode.constraints = [constraint]
