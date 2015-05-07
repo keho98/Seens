@@ -31,6 +31,8 @@ class GameViewController: UIViewController {
         
         scene.rootNode.addChildNode(planeNode)
         
+        let starParticles = SCNParticleSystem(named: "Stars", inDirectory: <#String!#>)
+        
         // create and add a camera to the scene
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
