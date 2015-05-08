@@ -13,8 +13,7 @@
 		D22801CA1AF88D0200216904 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22801C91AF88D0200216904 /* Images.xcassets */; };
 		D22801CD1AF88D0200216904 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22801CB1AF88D0200216904 /* LaunchScreen.xib */; };
 		D22801D91AF88D0200216904 /* SeensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22801D81AF88D0200216904 /* SeensTests.swift */; };
-		D2E27E0F1AFB2F1300481B65 /* Stars.scnp in Resources */ = {isa = PBXBuildFile; fileRef = D2E27E0D1AFB2F1300481B65 /* Stars.scnp */; };
-		D2E27E101AFB2F1300481B65 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = D2E27E0E1AFB2F1300481B65 /* star.png */; };
+		D2E27E471AFC8F5D00481B65 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = D2E27E461AFC8F5D00481B65 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +37,7 @@
 		D22801D21AF88D0200216904 /* SeensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22801D71AF88D0200216904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D22801D81AF88D0200216904 /* SeensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeensTests.swift; sourceTree = "<group>"; };
-		D2E27E0D1AFB2F1300481B65 /* Stars.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; name = Stars.scnp; path = ../Stars.scnp; sourceTree = "<group>"; };
-		D2E27E0E1AFB2F1300481B65 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = ../star.png; sourceTree = "<group>"; };
+		D2E27E461AFC8F5D00481B65 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +81,8 @@
 			children = (
 				D22801C01AF88D0200216904 /* AppDelegate.swift */,
 				D22801C41AF88D0200216904 /* GameViewController.swift */,
-				D2E27E151AFB314D00481B65 /* Media.scnassets */,
 				D22801C61AF88D0200216904 /* Main.storyboard */,
+				D2E27E461AFC8F5D00481B65 /* art.scnassets */,
 				D22801C91AF88D0200216904 /* Images.xcassets */,
 				D22801CB1AF88D0200216904 /* LaunchScreen.xib */,
 				D22801BE1AF88D0200216904 /* Supporting Files */,
@@ -115,16 +113,6 @@
 				D22801D71AF88D0200216904 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D2E27E151AFB314D00481B65 /* Media.scnassets */ = {
-			isa = PBXGroup;
-			children = (
-				D2E27E0D1AFB2F1300481B65 /* Stars.scnp */,
-				D2E27E0E1AFB2F1300481B65 /* star.png */,
-			);
-			name = Media.scnassets;
-			path = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22801CD1AF88D0200216904 /* LaunchScreen.xib in Resources */,
-				D2E27E101AFB2F1300481B65 /* star.png in Resources */,
-				D2E27E0F1AFB2F1300481B65 /* Stars.scnp in Resources */,
+				D2E27E471AFC8F5D00481B65 /* art.scnassets in Resources */,
 				D22801CA1AF88D0200216904 /* Images.xcassets in Resources */,
 				D22801C81AF88D0200216904 /* Main.storyboard in Resources */,
 			);
