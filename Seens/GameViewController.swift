@@ -70,7 +70,7 @@ class GameViewController: UIViewController {
         scnView.backgroundColor = UIColor.grayColor()
         
         // add animations
-        boxNode.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(CGFloat(0.0), y: CGFloat(0.0), z: CGFloat(2.0*M_PI), duration: 2.0)))
+        boxNode.runAction(SCNAction.repeatActionForever(SCNAction.rotateByX(CGFloat(0.0), y: CGFloat(0.0), z: CGFloat(2.0*M_PI), duration: 3.0)))
         
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: "handleTap:")
